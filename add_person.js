@@ -19,7 +19,7 @@ const knex = require('knex')({
 
 
   const argv = process.argv.slice(2);
-  console.log(argv)
+  //console.log(argv)
   const insertData = {first_name: argv[0], last_name: argv[1], birthdate: argv[2]};
 
 knex.insert(insertData).into("famous_people").then(function (id) {
